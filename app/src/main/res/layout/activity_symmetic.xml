@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SymmeticActivity"
+    android:orientation="vertical"
+    android:layout_margin="16dp">
+
+    <EditText
+        android:id="@+id/txtInputSym"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="Input Data"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/txtKunciSym"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Kunci Sesi" />
+
+    <Button
+        android:id="@+id/btnESym"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enkripsi"
+        android:onClick="doEncryptSym"/>
+
+    <Button
+        android:id="@+id/btnDSym"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dekripsi"
+        android:onClick="doDecryptSym"/>
+
+    <EditText
+        android:id="@+id/txtOutSym"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="Output Data"
+        android:inputType="textMultiLine" />
+</LinearLayout>
